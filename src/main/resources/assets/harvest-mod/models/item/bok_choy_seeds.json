@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "harvest-mod:item/bok_choy_seeds"
+  }
+}

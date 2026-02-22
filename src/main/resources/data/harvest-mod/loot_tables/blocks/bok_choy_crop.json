@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "harvest-mod:bok_choy_seeds"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "harvest-mod:bok_choy",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "harvest-mod:bok_choy_crop",
+              "properties": { "age": "7" }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

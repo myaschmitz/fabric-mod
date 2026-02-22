@@ -1,5 +1,6 @@
 package com.mya.harvestmod;
 
+import com.mya.harvestmod.block.ModBlocks;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -18,7 +19,9 @@ public class HarvestMod implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
+		ModBlocks.registerModBlocks();
+		ModItems.registerModItems();
 
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("Harvest Mod initialized!");
 	}
 }
